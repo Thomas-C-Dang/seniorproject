@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Tom Dang's Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="loseAudio" source src="audio/cat-laugh-meme-1.mp3" hidden></audio>
+<audio id="winAudio" source src="audio/Yay Kids Crowd - QuickSounds.com.mp3" hidden></audio>
+<audio id="incorrectBuzzer" source src="audio/extremely-loud-incorrect-buzzer_0cDaG20.mp3" hidden></audio>
+<audio id="correctBuzzer" source src="audio/duolingo-correct.mp3" hidden></audio>
+
+<h1>Welcome to my quiz! Please answer all the questions right to get a surprise!</h1>
+<div id="card1">
+<p>What does e^0 equal to?</p>
+<button onclick="answerIncorrect()">-1</button>
+<button onclick="answerIncorrect()">infinite</button>
+<button onclick="answerCorrect1()">1</button>
+<br>
+</div>
+<div id="card2" hidden>
+<p>Who was the president that got into the Watergate Scandal?</p>
+<button onclick="answerCorrect2()">Richard Nixon</button>
+<button onclick="answerIncorrect()">Dwight Eisenhower</button>
+<button onclick="answerIncorrect()">Joe Biden</button>
+<br>
+</div>
+
+<div id="card3" hidden>
+<p>Why was the Glorious Revolution called "Glorious"?</p>
+<button onclick="answerIncorrect()">The king turned glorious</button>
+<button onclick="answerCorrect3()">No bloodshed</button>
+<button onclick="answerIncorrect()">Lots of bloodshed</button>
+<br>
+</div>
+
+<div id="card4" hidden>
+<p>When you combine two hydrogen atoms and one oxygen atom, what do you get?</p>
+<button onclick="answerCorrect4()">Water</button>
+<button onclick="answerIncorrect()">Dioxide Monhydrogen</button>
+<button onclick="answerIncorrect()">Explosion</button>
+<br>
+</div>
+
+<div id="card5" hidden>
+<p>CONGRATULATIONS! You've made it to the end! Here's a cake!</p>
+<img src="images/chocolate_cake.avif">
+<button onclick = "reset()">Click here to play again</button>
+</div>
+
+<div id="card6" hidden>
+    <p>HAHAHA NO SURPRISE FOR YOU!!!</p>
+    <img src="images/laugh-point.png">
+    <button onclick = "reset()">Click here to play again</button>
+</div>
+
+<p id="WRONG"></p>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
