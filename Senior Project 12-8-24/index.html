@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Tom Dang's Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="loseAudio" source src="audio/cat-laugh-meme-1.mp3" hidden></audio>
+<audio id="winAudio" source src="audio/Yay Kids Crowd - QuickSounds.com.mp3" hidden></audio> 
+    
+<audio id="incorrectBuzzer" source src="audio/extremely-loud-incorrect-buzzer_0cDaG20.mp3" hidden></audio>
+<audio id="correctBuzzer" source src="audio/duolingo-correct.mp3" hidden></audio>
+
+<audio id="cheatAudio" source src = "audio/vine-boom.mp3" hidden></audio>
+
+<h1>Welcome to my quiz! Please answer all the questions right to get a surprise!</h1>
+
+<div id="card1">
+<p>What does e^0 equal to?</p>
+<button onclick="checkAnswer('question1', '100')">100</button>
+<button onclick="checkAnswer('question1', '1000')">1000</button>
+<button onclick="checkAnswer('question1', '1')">1</button>
+<br>
+</div>
+  
+<div id="card2" hidden>
+<p>Who was the president that got into the Watergate Scandal?</p>
+<button onclick="checkAnswer('question2', 'Richard Nixon')">Richard Nixon</button>
+<button onclick="checkAnswer('question2', 'Joe Biden')">Joe Biden</button>
+<button onclick="checkAnswer('question2', 'Dwight Eisenhower')">Dwight Eisenhower</button>
+<br>
+</div>
+
+<div id="card3" hidden>
+<p>Why was the Glorious Revolution called "Glorious"?</p>
+<button onclick="checkAnswer('question3', 'The king turned glorious')">The king turned glorious</button>
+<button onclick="checkAnswer('question3', 'No bloodshed')">No bloodshed</button>
+<button onclick="checkAnswer('question3', 'Lots of bloodshed')">Lots of bloodshed</button>
+<br>
+</div>
+
+<div id="card4" hidden>
+<p>When you combine two hydrogen atoms and one oxygen atom, what do you get?</p>
+<button onclick="checkAnswer('question4', 'Water')">Water</button>
+<button onclick="checkAnswer('question4', 'Dioxide Monhydrogen')">Dioxide Monhydrogen</button>
+<button onclick="checkAnswer('question4', 'Explosion')">Explosion</button>
+<br>
+</div>
+
+<div id="card5" hidden>
+<p>CONGRATULATIONS! You've made it to the end! Here's a cake!</p>
+<img src="images/chocolate_cake.avif">
+<button onclick = "reset()">Click here to play again</button>
+</div>
+
+<div id="card6" hidden>
+    <p>HAHAHA NO SURPRISE FOR YOU!!!</p>
+    <img src="images/laugh-point.png">
+    <button onclick = "reset()">Click here to play again</button>
+</div>
+
+<div id="card7" hidden>
+        <p id="numIncorrect">You made 0 errors!</p>
+        <button onclick = "winOrlose()">Click here to receive your reward...</button>
+</div>
+
+<div id="card8" hidden>
+    <p>NO CHEATING >:(</p>
+    <img src = images/noGru.jpeg>
+    <button onclick = "reset()">DO IT AGAIN</button>
+</div>
+
+
+<button id="cheatButton" onclick="cheatDetected()">Answer Key</button>
+
+<p id="wrong"></p>
+
+<script type="text/javascript" src="script.js"></script>
+
+<p id="numWins">Wins: 0</p>
+<p id="numLosses">Losses: 0</p>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+p{
+    color:blue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    color:green;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+html{
+    background-color:aquamarine;
+    text-align:center;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6, #card7{
+    border: 1px groove black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:white;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#card8{
+    border: 1px groove black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:white;
+    width: 300px;
+    margin: 0 auto;
+    color:red;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:active {
+    background-color: gray;
+}
+
+img{
+    height:300px;
+    width:300px;
+}
+
+#wrong, #numIncorrect{
+    color:red;
+}
+
+#cheatButton{
+    color:red;
+    position: relative;
+    margin: 0 auto;
+}
+
+#numWins, #numLosses {
+    border: 1px groove black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:lightcyan;
+    width: 100px;
+    margin: 0 auto;
+}
